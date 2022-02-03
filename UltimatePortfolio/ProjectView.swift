@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct ProjectView: View {
+    // The type is corresponding to SceneStorage "selectedView"(String?).
+    static let openTag: String? = "Open"
+    static let closedTag: String? = "Closed"
+
     let showClosedProjects: Bool
     let projects: FetchRequest<Project>
 
