@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		462F9B4927B011EF00EFE901 /* Binding-OnChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462F9B4827B011EF00EFE901 /* Binding-OnChange.swift */; };
 		4636941227AAA81A0088C9C5 /* Item-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4636941127AAA81A0088C9C5 /* Item-CoreDataHelpers.swift */; };
 		4636941427AAA9050088C9C5 /* Project-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4636941327AAA9050088C9C5 /* Project-CoreDataHelpers.swift */; };
 		46387EF427888DF5006A38A4 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46387EF327888DF5006A38A4 /* HomeView.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		462F9B4827B011EF00EFE901 /* Binding-OnChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding-OnChange.swift"; sourceTree = "<group>"; };
 		4636941127AAA81A0088C9C5 /* Item-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item-CoreDataHelpers.swift"; sourceTree = "<group>"; };
 		4636941327AAA9050088C9C5 /* Project-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project-CoreDataHelpers.swift"; sourceTree = "<group>"; usesTabs = 0; };
 		46387EF327888DF5006A38A4 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 				4690011A2786CCA700D0E6AF /* UltimatePortfolio.entitlements */,
 				469001072786BDA700D0E6AF /* UltimatePortfolioApp.swift */,
 				46405F1627AD6740009DA1F7 /* EditItemView.swift */,
+				462F9B4827B011EF00EFE901 /* Binding-OnChange.swift */,
 				46387EF327888DF5006A38A4 /* HomeView.swift */,
 				46387EF527888E67006A38A4 /* ProjectView.swift */,
 				46405F1827AD75E2009DA1F7 /* ItemRowView.swift */,
@@ -183,6 +186,7 @@
 				469001192786C60800D0E6AF /* DataController.swift in Sources */,
 				4690010A2786BDA700D0E6AF /* ContentView.swift in Sources */,
 				46387EF427888DF5006A38A4 /* HomeView.swift in Sources */,
+				462F9B4927B011EF00EFE901 /* Binding-OnChange.swift in Sources */,
 				469001082786BDA700D0E6AF /* UltimatePortfolioApp.swift in Sources */,
 				46405F1927AD75E2009DA1F7 /* ItemRowView.swift in Sources */,
 				4636941227AAA81A0088C9C5 /* Item-CoreDataHelpers.swift in Sources */,
