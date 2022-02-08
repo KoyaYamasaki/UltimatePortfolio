@@ -14,6 +14,8 @@
 		46387EF627888E67006A38A4 /* ProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46387EF527888E67006A38A4 /* ProjectView.swift */; };
 		46405F1727AD6740009DA1F7 /* EditItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46405F1627AD6740009DA1F7 /* EditItemView.swift */; };
 		46405F1927AD75E2009DA1F7 /* ItemRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46405F1827AD75E2009DA1F7 /* ItemRowView.swift */; };
+		464AB13127B2AD4600837D9C /* ProjectHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464AB13027B2AD4600837D9C /* ProjectHeaderView.swift */; };
+		464AB13327B2B03200837D9C /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 464AB13227B2B03200837D9C /* Colors.xcassets */; };
 		469001082786BDA700D0E6AF /* UltimatePortfolioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469001072786BDA700D0E6AF /* UltimatePortfolioApp.swift */; };
 		4690010A2786BDA700D0E6AF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469001092786BDA700D0E6AF /* ContentView.swift */; };
 		4690010C2786BDA800D0E6AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4690010B2786BDA800D0E6AF /* Assets.xcassets */; };
@@ -31,6 +33,8 @@
 		46387EF527888E67006A38A4 /* ProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectView.swift; sourceTree = "<group>"; };
 		46405F1627AD6740009DA1F7 /* EditItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemView.swift; sourceTree = "<group>"; };
 		46405F1827AD75E2009DA1F7 /* ItemRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRowView.swift; sourceTree = "<group>"; };
+		464AB13027B2AD4600837D9C /* ProjectHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectHeaderView.swift; sourceTree = "<group>"; };
+		464AB13227B2B03200837D9C /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		469001042786BDA700D0E6AF /* UltimatePortfolio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UltimatePortfolio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		469001072786BDA700D0E6AF /* UltimatePortfolioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UltimatePortfolioApp.swift; sourceTree = "<group>"; };
 		469001092786BDA700D0E6AF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -78,6 +82,7 @@
 				4690011B2786CCAF00D0E6AF /* Info.plist */,
 				4690011A2786CCA700D0E6AF /* UltimatePortfolio.entitlements */,
 				469001072786BDA700D0E6AF /* UltimatePortfolioApp.swift */,
+				464AB13027B2AD4600837D9C /* ProjectHeaderView.swift */,
 				46405F1627AD6740009DA1F7 /* EditItemView.swift */,
 				462F9B4827B011EF00EFE901 /* Binding-OnChange.swift */,
 				46387EF327888DF5006A38A4 /* HomeView.swift */,
@@ -89,6 +94,7 @@
 				4636941327AAA9050088C9C5 /* Project-CoreDataHelpers.swift */,
 				469001182786C60800D0E6AF /* DataController.swift */,
 				4690010B2786BDA800D0E6AF /* Assets.xcassets */,
+				464AB13227B2B03200837D9C /* Colors.xcassets */,
 				4690010D2786BDA800D0E6AF /* Preview Content */,
 			);
 			path = UltimatePortfolio;
@@ -168,6 +174,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				464AB13327B2B03200837D9C /* Colors.xcassets in Resources */,
 				4690010F2786BDA800D0E6AF /* Preview Assets.xcassets in Resources */,
 				4690010C2786BDA800D0E6AF /* Assets.xcassets in Resources */,
 			);
@@ -181,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				46387EF627888E67006A38A4 /* ProjectView.swift in Sources */,
+				464AB13127B2AD4600837D9C /* ProjectHeaderView.swift in Sources */,
 				469001172786C16700D0E6AF /* Main.xcdatamodeld in Sources */,
 				4636941427AAA9050088C9C5 /* Project-CoreDataHelpers.swift in Sources */,
 				469001192786C60800D0E6AF /* DataController.swift in Sources */,
