@@ -16,12 +16,12 @@ struct ProjectHeaderView: View {
                 Text(project.projectTitle)
 
                 ProgressView(value: project.completionAmount)
-                    .accentColor(Color("Gold"))
+                    .accentColor(Color(project.projectColor))
             }
 
             Spacer()
 
-            NavigationLink(destination: EmptyView()) {
+            NavigationLink(destination: EditProjectView(project: project)) {
                 Image(systemName: "square.and.pencil")
                     .imageScale(.large)
             }
