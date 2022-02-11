@@ -20,10 +20,10 @@ struct EditItemView: View {
     init(item: Item) {
         self.item = item
 
-        _title = State(wrappedValue: item.itemTitle)
-        _detail = State(wrappedValue: item.itemDetail)
-        _priority = State(wrappedValue: Int(item.priority))
-        _completed = State(wrappedValue: item.completed)
+        self.title = item.itemTitle
+        self.detail = item.itemDetail
+        self.priority = Int(item.priority)
+        self.completed = item.completed
     }
 
     var body: some View {
@@ -51,7 +51,7 @@ struct EditItemView: View {
     }
 
     func update() {
-        item.project?.objectWillChange.send()
+//        item.project?.objectWillChange.send()
 
         item.title = title
         item.detail = detail
