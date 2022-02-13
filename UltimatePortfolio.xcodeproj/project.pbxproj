@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		462B498427B6B21600737E45 /* Sequence-Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462B498327B6B21600737E45 /* Sequence-Sorting.swift */; };
+		462DD69227B9B0C100DF6E11 /* SelectSomethingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462DD69127B9B0C100DF6E11 /* SelectSomethingView.swift */; };
 		462F9B4927B011EF00EFE901 /* Binding-OnChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462F9B4827B011EF00EFE901 /* Binding-OnChange.swift */; };
 		4634C1BD27B34DF400D0D317 /* EditProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4634C1BC27B34DF400D0D317 /* EditProjectView.swift */; };
 		4636941227AAA81A0088C9C5 /* Item-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4636941127AAA81A0088C9C5 /* Item-CoreDataHelpers.swift */; };
@@ -29,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		462B498327B6B21600737E45 /* Sequence-Sorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence-Sorting.swift"; sourceTree = "<group>"; };
+		462DD69127B9B0C100DF6E11 /* SelectSomethingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSomethingView.swift; sourceTree = "<group>"; };
 		462F9B4827B011EF00EFE901 /* Binding-OnChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding-OnChange.swift"; sourceTree = "<group>"; };
 		4634C1BC27B34DF400D0D317 /* EditProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProjectView.swift; sourceTree = "<group>"; };
 		4636941127AAA81A0088C9C5 /* Item-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item-CoreDataHelpers.swift"; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 				462F9B4827B011EF00EFE901 /* Binding-OnChange.swift */,
 				46387EF327888DF5006A38A4 /* HomeView.swift */,
 				46387EF527888E67006A38A4 /* ProjectView.swift */,
+				462DD69127B9B0C100DF6E11 /* SelectSomethingView.swift */,
 				46405F1827AD75E2009DA1F7 /* ItemRowView.swift */,
 				469001092786BDA700D0E6AF /* ContentView.swift */,
 				4636941127AAA81A0088C9C5 /* Item-CoreDataHelpers.swift */,
@@ -199,6 +202,7 @@
 				4636941427AAA9050088C9C5 /* Project-CoreDataHelpers.swift in Sources */,
 				4634C1BD27B34DF400D0D317 /* EditProjectView.swift in Sources */,
 				469001192786C60800D0E6AF /* DataController.swift in Sources */,
+				462DD69227B9B0C100DF6E11 /* SelectSomethingView.swift in Sources */,
 				4690010A2786BDA700D0E6AF /* ContentView.swift in Sources */,
 				46387EF427888DF5006A38A4 /* HomeView.swift in Sources */,
 				462F9B4927B011EF00EFE901 /* Binding-OnChange.swift in Sources */,
