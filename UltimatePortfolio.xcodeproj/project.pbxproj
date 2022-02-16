@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		462B498427B6B21600737E45 /* Sequence-Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462B498327B6B21600737E45 /* Sequence-Sorting.swift */; };
 		462DD69227B9B0C100DF6E11 /* SelectSomethingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462DD69127B9B0C100DF6E11 /* SelectSomethingView.swift */; };
+		462DD69427B9B43C00DF6E11 /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462DD69327B9B43C00DF6E11 /* Bundle-Decodable.swift */; };
 		462F9B4927B011EF00EFE901 /* Binding-OnChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462F9B4827B011EF00EFE901 /* Binding-OnChange.swift */; };
 		4634C1BD27B34DF400D0D317 /* EditProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4634C1BC27B34DF400D0D317 /* EditProjectView.swift */; };
 		4636941227AAA81A0088C9C5 /* Item-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4636941127AAA81A0088C9C5 /* Item-CoreDataHelpers.swift */; };
@@ -17,6 +18,9 @@
 		46387EF627888E67006A38A4 /* ProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46387EF527888E67006A38A4 /* ProjectView.swift */; };
 		46405F1727AD6740009DA1F7 /* EditItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46405F1627AD6740009DA1F7 /* EditItemView.swift */; };
 		46405F1927AD75E2009DA1F7 /* ItemRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46405F1827AD75E2009DA1F7 /* ItemRowView.swift */; };
+		4649861B27BD3C8F00EBCEA8 /* Awards.json in Resources */ = {isa = PBXBuildFile; fileRef = 4649861A27BD3C8F00EBCEA8 /* Awards.json */; };
+		4649861D27BD3D3300EBCEA8 /* Award.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4649861C27BD3D3300EBCEA8 /* Award.swift */; };
+		4649861F27BD3DC800EBCEA8 /* AwardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4649861E27BD3DC800EBCEA8 /* AwardsView.swift */; };
 		464AB13127B2AD4600837D9C /* ProjectHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464AB13027B2AD4600837D9C /* ProjectHeaderView.swift */; };
 		464AB13327B2B03200837D9C /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 464AB13227B2B03200837D9C /* Colors.xcassets */; };
 		469001082786BDA700D0E6AF /* UltimatePortfolioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469001072786BDA700D0E6AF /* UltimatePortfolioApp.swift */; };
@@ -31,6 +35,7 @@
 /* Begin PBXFileReference section */
 		462B498327B6B21600737E45 /* Sequence-Sorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence-Sorting.swift"; sourceTree = "<group>"; };
 		462DD69127B9B0C100DF6E11 /* SelectSomethingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSomethingView.swift; sourceTree = "<group>"; };
+		462DD69327B9B43C00DF6E11 /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
 		462F9B4827B011EF00EFE901 /* Binding-OnChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding-OnChange.swift"; sourceTree = "<group>"; };
 		4634C1BC27B34DF400D0D317 /* EditProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProjectView.swift; sourceTree = "<group>"; };
 		4636941127AAA81A0088C9C5 /* Item-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item-CoreDataHelpers.swift"; sourceTree = "<group>"; };
@@ -39,6 +44,9 @@
 		46387EF527888E67006A38A4 /* ProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectView.swift; sourceTree = "<group>"; };
 		46405F1627AD6740009DA1F7 /* EditItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemView.swift; sourceTree = "<group>"; };
 		46405F1827AD75E2009DA1F7 /* ItemRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRowView.swift; sourceTree = "<group>"; };
+		4649861A27BD3C8F00EBCEA8 /* Awards.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Awards.json; sourceTree = "<group>"; };
+		4649861C27BD3D3300EBCEA8 /* Award.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Award.swift; sourceTree = "<group>"; };
+		4649861E27BD3DC800EBCEA8 /* AwardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardsView.swift; sourceTree = "<group>"; };
 		464AB13027B2AD4600837D9C /* ProjectHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectHeaderView.swift; sourceTree = "<group>"; };
 		464AB13227B2B03200837D9C /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		469001042786BDA700D0E6AF /* UltimatePortfolio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UltimatePortfolio.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,6 +102,7 @@
 				462F9B4827B011EF00EFE901 /* Binding-OnChange.swift */,
 				46387EF327888DF5006A38A4 /* HomeView.swift */,
 				46387EF527888E67006A38A4 /* ProjectView.swift */,
+				462DD69327B9B43C00DF6E11 /* Bundle-Decodable.swift */,
 				462DD69127B9B0C100DF6E11 /* SelectSomethingView.swift */,
 				46405F1827AD75E2009DA1F7 /* ItemRowView.swift */,
 				469001092786BDA700D0E6AF /* ContentView.swift */,
@@ -101,6 +110,9 @@
 				4636941327AAA9050088C9C5 /* Project-CoreDataHelpers.swift */,
 				462B498327B6B21600737E45 /* Sequence-Sorting.swift */,
 				469001182786C60800D0E6AF /* DataController.swift */,
+				4649861A27BD3C8F00EBCEA8 /* Awards.json */,
+				4649861C27BD3D3300EBCEA8 /* Award.swift */,
+				4649861E27BD3DC800EBCEA8 /* AwardsView.swift */,
 				469001152786C16700D0E6AF /* Main.xcdatamodeld */,
 				4690010B2786BDA800D0E6AF /* Assets.xcassets */,
 				464AB13227B2B03200837D9C /* Colors.xcassets */,
@@ -184,6 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				464AB13327B2B03200837D9C /* Colors.xcassets in Resources */,
+				4649861B27BD3C8F00EBCEA8 /* Awards.json in Resources */,
 				4690010F2786BDA800D0E6AF /* Preview Assets.xcassets in Resources */,
 				4690010C2786BDA800D0E6AF /* Assets.xcassets in Resources */,
 			);
@@ -198,15 +211,18 @@
 			files = (
 				46387EF627888E67006A38A4 /* ProjectView.swift in Sources */,
 				464AB13127B2AD4600837D9C /* ProjectHeaderView.swift in Sources */,
+				4649861F27BD3DC800EBCEA8 /* AwardsView.swift in Sources */,
 				469001172786C16700D0E6AF /* Main.xcdatamodeld in Sources */,
 				4636941427AAA9050088C9C5 /* Project-CoreDataHelpers.swift in Sources */,
 				4634C1BD27B34DF400D0D317 /* EditProjectView.swift in Sources */,
 				469001192786C60800D0E6AF /* DataController.swift in Sources */,
 				462DD69227B9B0C100DF6E11 /* SelectSomethingView.swift in Sources */,
+				4649861D27BD3D3300EBCEA8 /* Award.swift in Sources */,
 				4690010A2786BDA700D0E6AF /* ContentView.swift in Sources */,
 				46387EF427888DF5006A38A4 /* HomeView.swift in Sources */,
 				462F9B4927B011EF00EFE901 /* Binding-OnChange.swift in Sources */,
 				462B498427B6B21600737E45 /* Sequence-Sorting.swift in Sources */,
+				462DD69427B9B43C00DF6E11 /* Bundle-Decodable.swift in Sources */,
 				469001082786BDA700D0E6AF /* UltimatePortfolioApp.swift in Sources */,
 				46405F1927AD75E2009DA1F7 /* ItemRowView.swift in Sources */,
 				4636941227AAA81A0088C9C5 /* Item-CoreDataHelpers.swift in Sources */,

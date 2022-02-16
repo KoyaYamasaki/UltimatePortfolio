@@ -44,7 +44,6 @@ struct ProjectView: View {
                                     let allItems = project.projectItems(using: sortOrder)
 
                                     for offset in offsets {
-                                        print("offset: ", offset)
                                         let item = allItems[offset]
                                         dataController.delete(item)
                                     }
