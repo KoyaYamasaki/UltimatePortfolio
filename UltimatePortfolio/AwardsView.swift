@@ -44,7 +44,7 @@ struct AwardsView: View {
             if dataController.hasEarned(award: selectedAward) {
                 return Alert(title: Text("Unlocked: \(selectedAward.name)"), message: Text(selectedAward.description), dismissButton: .default(Text("OK")))
             } else {
-                return Alert(title: Text("Locked: \(selectedAward.name)"), message: Text(selectedAward.description), dismissButton: .default(Text("OK")))
+                return Alert(title: Text("Locked"), message: Text(selectedAward.description), dismissButton: .default(Text("OK")))
             }
         }
     } //: body
