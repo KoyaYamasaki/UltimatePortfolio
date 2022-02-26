@@ -15,13 +15,17 @@ struct ItemListView: View {
         if items.isEmpty {
             EmptyView()
         } else {
-            Text(title)
-                .font(.headline)
-                .foregroundColor(.secondary)
-                .padding(.top)
-
-            ForEach(items, content: singleItem)
+            ItemList
         }
+    }
+
+    @ViewBuilder var ItemList: some View {
+        Text(title)
+            .font(.headline)
+            .foregroundColor(.secondary)
+            .padding(.top)
+
+        ForEach(items, content: singleItem)
     }
 
     func singleItem(_ item: Item) -> some View {
