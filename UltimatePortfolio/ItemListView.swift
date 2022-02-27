@@ -15,11 +15,11 @@ struct ItemListView: View {
         if items.isEmpty {
             EmptyView()
         } else {
-            ItemList
+            itemList
         }
     }
 
-    @ViewBuilder var ItemList: some View {
+    @ViewBuilder var itemList: some View {
         Text(title)
             .font(.headline)
             .foregroundColor(.secondary)
@@ -55,8 +55,8 @@ struct ItemListView: View {
     }
 }
 
-//struct ItemListView_Previews: PreviewProvider {
+// struct ItemListView_Previews: PreviewProvider {
 //    static var previews: some View {
 //        ItemListView()
 //    }
-//}
+// }

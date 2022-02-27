@@ -13,7 +13,11 @@ struct HomeView: View {
     static let tag: String? = "Home"
 
     @EnvironmentObject var dataController: DataController
-    @FetchRequest(entity: Project.entity(), sortDescriptors: [NSSortDescriptor(keyPath: \Project.title, ascending: true)], predicate: NSPredicate(format: "closed = false")) var projects: FetchedResults<Project>
+    @FetchRequest(
+        entity: Project.entity(),
+        sortDescriptors: [NSSortDescriptor(keyPath: \Project.title, ascending: true)],
+        predicate: NSPredicate(format: "closed = false")
+    ) var projects: FetchedResults<Project>
     let items: FetchRequest<Item>
 
     var projectRows: [GridItem] {
@@ -45,7 +49,7 @@ struct HomeView: View {
                         } //: LazyHGrid
                         .padding([.horizontal, .top])
                     } //: ScrollView
-                    
+
                     VStack(alignment: .leading) {
                         ItemListView(title: "Up next", items: items.wrappedValue.prefix(3))
                         ItemListView(title: "More to explore", items: items.wrappedValue.dropFirst(3))
@@ -65,10 +69,6 @@ struct HomeView: View {
     }
 }
 
-//Button("Add Data") {
-//    dataController.deleteAll()
-//    try? dataController.createSampleData()
-//}
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
