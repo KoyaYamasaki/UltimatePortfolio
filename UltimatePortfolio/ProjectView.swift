@@ -59,6 +59,12 @@ struct ProjectView: View {
         ToolbarItem(placement: .navigationBarTrailing) {
             if !showClosedProjects {
                 Button(action: addProject) {
+                    // In iOS 14.3 VoiceOver has a glich that reads the label
+                    // "Add Project" as "Add" no matter what accesibility label
+                    // we give this toolbar button when using a Label.
+                    // As a result, when VoiceOVer is running, we use a text view for
+                    // the button instead, forcing a correct reading without losing
+                    // the original layout.
                     if UIAccessibility.isVoiceOverRunning {
                         Text("Add Project")
                     } else {
