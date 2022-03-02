@@ -13,7 +13,7 @@ import SwiftUI
 class DataController: ObservableObject {
     /// The lone CloudKit container used to store all our data.
     let container: NSPersistentCloudKitContainer
-    
+
     /// Initializes a data controller, either in memory(for temporary use such as testing and previewing),
     /// or on permanent strorage (for use in regular app runs.) Defaults to permanent storage.
     ///
@@ -48,7 +48,7 @@ class DataController: ObservableObject {
 
         return dataController
     }()
- 
+
     /// Creates example projects and items to make manual testing easier.
     /// - Throws: An NSError sent from calling save() on the NSManagedObjectContext.
     func createSampleData() throws {
@@ -74,7 +74,6 @@ class DataController: ObservableObject {
         try viewContext.save()
     }
 
-    
     /// Saves our Core Data context if there are changes. This silentlt ignores
     /// any errors caused by saving, but this should be fine because our
     /// attrubytes are optional.
