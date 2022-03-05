@@ -43,6 +43,7 @@
 		469001172786C16700D0E6AF /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 469001152786C16700D0E6AF /* Main.xcdatamodeld */; };
 		469001192786C60800D0E6AF /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469001182786C60800D0E6AF /* DataController.swift */; };
 		4690011E2786CCCC00D0E6AF /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4690011D2786CCCC00D0E6AF /* CloudKit.framework */; };
+		46EB665127D3A15C00C3192E /* PerformanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB665027D3A15C00C3192E /* PerformanceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +100,7 @@
 		4690011A2786CCA700D0E6AF /* UltimatePortfolio.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UltimatePortfolio.entitlements; sourceTree = "<group>"; };
 		4690011B2786CCAF00D0E6AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4690011D2786CCCC00D0E6AF /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		46EB665027D3A15C00C3192E /* PerformanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 				46311D5427D250BA000C94CF /* Fixtures */,
 				46498B2127CECBC400461C04 /* UltimatePortfolioTests.swift */,
 				46498B2827CECD3900461C04 /* AssetTests.swift */,
+				46EB665027D3A15C00C3192E /* PerformanceTests.swift */,
 				46498B2A27CFB67200461C04 /* ProjectTests.swift */,
 				46498B2C27CFB91A00461C04 /* AwardTests.swift */,
 				4675E95127D0E55600899430 /* DevelopmentTests.swift */,
@@ -399,6 +402,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46EB665127D3A15C00C3192E /* PerformanceTests.swift in Sources */,
 				46498B2927CECD3900461C04 /* AssetTests.swift in Sources */,
 				46498B2D27CFB91A00461C04 /* AwardTests.swift in Sources */,
 				46498B2227CECBC400461C04 /* UltimatePortfolioTests.swift in Sources */,
