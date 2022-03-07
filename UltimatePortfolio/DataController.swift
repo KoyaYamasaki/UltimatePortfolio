@@ -29,11 +29,20 @@ class DataController: ObservableObject {
             container.persistentStoreDescriptions.first?.url = URL(fileURLWithPath: "/dev/null")
         }
 
-        container.loadPersistentStores(completionHandler: { _, error in
+        container.loadPersistentStores { _, error in
             if let error = error {
                 fatalError("Fatal error loading store: \(error.localizedDescription)")
             }
-        })
+
+            #if DEBUG
+            if CommandLine.arguments.contains("enable-testing") {
+                self.deleteAll()
+                // Some tests(testEditingProjectUpdatesCorrectly &
+                // testEditingItemUpdatesCorrectly) fails if animation set to true
+//                UIView.setAnimationsEnabled(false)
+            }
+            #endif
+        }
     }
 
     static var preview: DataController = {
