@@ -12,39 +12,25 @@ struct ProjectView: View {
     static let openTag: String? = "Open"
     static let closedTag: String? = "Closed"
 
-    @EnvironmentObject var dataController: DataController
-    @Environment(\.managedObjectContext) var managedObjectContext
-
+    @StateObject var viewModel: ViewModel
     @State private var showingSortOrder = false
-    @State private var sortOrder = Item.SortOrder.optimized
-    @State private var sortDescriptor: NSSortDescriptor?
-
-    let showClosedProjects: Bool
-    let projects: FetchRequest<Project>
-
-    init(showClosedProjects: Bool) {
-        self.showClosedProjects = showClosedProjects
-        projects = FetchRequest<Project>(
-            entity: Project.entity(),
-            sortDescriptors: [NSSortDescriptor(keyPath: \Project.creationDate, ascending: false)],
-            predicate: NSPredicate(format: "closed = %d", showClosedProjects)
-        )
-    }
 
     var projectsList: some View {
         List {
-            ForEach(projects.wrappedValue) { project in
+            ForEach(viewModel.projects) { project in
                 Section(header: ProjectHeaderView(project: project)) {
-                    ForEach(project.projectItems(using: sortOrder)) { item in
+                    ForEach(project.projectItems(using: viewModel.sortOrder)) { item in
                         ItemRowView(project: project, item: item)
                     }
                     .onDelete { offsets in
-                        delete(offsets, form: project)
+                        viewModel.delete(offsets, form: project)
                     }
 
-                    if !showClosedProjects {
+                    if !viewModel.showClosedProjects {
                         Button {
-                            addItem(to: project)
+                            withAnimation {
+                                viewModel.addItem(to: project)
+                            }
                         } label: {
                             Label("Add New Item", systemImage: "plus")
                         }
@@ -57,8 +43,12 @@ struct ProjectView: View {
 
     var addProjectToolbarItem: some ToolbarContent {
         ToolbarItem(placement: .navigationBarTrailing) {
-            if !showClosedProjects {
-                Button(action: addProject) {
+            if !viewModel.showClosedProjects {
+                Button {
+                    withAnimation {
+                        viewModel.addProject()
+                    }
+                } label: {
                     // In iOS 14.3 VoiceOver has a glich that reads the label
                     // "Add Project" as "Add" no matter what accesibility label
                     // we give this toolbar button when using a Label.
@@ -88,23 +78,23 @@ struct ProjectView: View {
     var body: some View {
         NavigationView {
             Group {
-                if projects.wrappedValue.isEmpty {
+                if viewModel.projects.isEmpty {
                     Text("There's nothing here right now")
                         .foregroundColor(.secondary)
                 } else {
                     projectsList
                 } //: Else
             } //: Group
-            .navigationTitle(showClosedProjects ? "Closed Projects" : "Open Projects")
+            .navigationTitle(viewModel.showClosedProjects ? "Closed Projects" : "Open Projects")
             .toolbar {
                 addProjectToolbarItem
                 sortOrderToolbarItem
             }
             .actionSheet(isPresented: $showingSortOrder) {
                 ActionSheet(title: Text("Sort items"), message: nil, buttons: [
-                    .default(Text("Optimized")) { sortOrder = .optimized },
-                    .default(Text("Creation Date")) { sortOrder = .creationDate },
-                    .default(Text("Title")) { sortOrder = .title }
+                    .default(Text("Optimized")) { viewModel.sortOrder = .optimized },
+                    .default(Text("Creation Date")) { viewModel.sortOrder = .creationDate },
+                    .default(Text("Title")) { viewModel.sortOrder = .title }
                 ])
             }
 
@@ -112,33 +102,9 @@ struct ProjectView: View {
         } //: NavigationView
     } //: Body
 
-    func addItem(to project: Project) {
-        withAnimation {
-            let item = Item(context: managedObjectContext)
-            item.project = project
-            item.creationDate = Date()
-            dataController.save()
-        }
-    }
-
-    func delete(_ offsets: IndexSet, form project: Project) {
-        let allItems = project.projectItems(using: sortOrder)
-
-        for offset in offsets {
-            let item = allItems[offset]
-            dataController.delete(item)
-        }
-
-        dataController.save()
-    }
-
-    func addProject() {
-        withAnimation {
-            let project = Project(context: managedObjectContext)
-            project.closed = false
-            project.creationDate = Date()
-            dataController.save()
-        }
+    init(dataController: DataController, showClosedProjects: Bool) {
+        let viewModel = ViewModel(dataController: dataController, showClosedProjects: showClosedProjects)
+        _viewModel = StateObject(wrappedValue: viewModel)
     }
 }
 
@@ -146,8 +112,6 @@ struct ProjectView_Previews: PreviewProvider {
     static var dataController = DataController.preview
 
     static var previews: some View {
-        ProjectView(showClosedProjects: false)
-            .environment(\.managedObjectContext, dataController.container.viewContext)
-            .environmentObject(dataController)
+        ProjectView(dataController: dataController, showClosedProjects: false)
     }
 }
