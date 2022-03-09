@@ -54,9 +54,3 @@ struct ItemListView: View {
         } //: NavigationLink
     }
 }
-
-// struct ItemListView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ItemListView()
-//    }
-// }
