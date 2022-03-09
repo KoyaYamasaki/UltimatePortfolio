@@ -7,7 +7,6 @@
 
 import CoreData
 import Foundation
-import SwiftUI
 
 extension ProjectView {
     class ViewModel: NSObject, ObservableObject, NSFetchedResultsControllerDelegate {
